@@ -293,7 +293,7 @@ const ActivityDomainPage = () => {
 
   // Function to fetch data from the API
   const fetchDomains = async () => {
-    const url = "https://lawonearth.co.uk/api/back-office/core/app-domains/"; // API endpoint
+    const url = ""; // API endpoint
     const headers = {
       "Authorization": "Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f", // Replace with your Bearer token
       "COMPANY-CODE": "def-mc-admin", // Replace with your company code
@@ -350,7 +350,7 @@ const ActivityDomainPage = () => {
       return;
     }
   
-    const url = `https://lawonearth.co.uk/api/back-office/core/app-domains/update/${editDomain.dom_code}`;
+    const url = `${editDomain.dom_code}`;
     
     const headers = {
       "Authorization": "Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f", // Replace with your Bearer token
@@ -412,7 +412,7 @@ const ActivityDomainPage = () => {
 
 // Handle the create API call for a new domain
 const handleAddSubmit = async () => {
-    const url = "https://lawonearth.co.uk/api/back-office/core/app-domains/create";
+    const url = "??";
     const headers = {
       "Authorization": "Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f", // Replace with your Bearer token
       "COMPANY-CODE": "def-mc-admin", // Replace with your company code

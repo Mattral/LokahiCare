@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import AiChatbot from 'components/aiChat';
 
 const EmbedPage = () => {
   const [iframeLoaded, setIframeLoaded] = useState(true); // State to track iframe load status
@@ -28,7 +29,7 @@ const EmbedPage = () => {
           </a>
         </div>
       )}
-      
+      <AiChatbot/>
       {/* Embed the Streamlit app using an iframe */}
       <iframe 
         src="https://detectcarenet.streamlit.app/?embedded=true"

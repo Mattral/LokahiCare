@@ -78,7 +78,7 @@ export default function DashboardDomain2() {
 
       // Example axios call
       await axios.post(
-        "https://lawonearth.co.uk/api/back-office/core/apps/create", // Replace with actual API URL
+        "httcore/apps/create", // Replace with actual API URL
         formDataForApi,
         {
           headers: {
@@ -393,7 +393,7 @@ export default function DashboardDomain2() {
 
       // API call using axios
       await axios.post(
-        "https://lawonearth.co.uk/api/back-office/core/apps/create", // Replace with actual API URL
+        "https:fice/core/apps/create", // Replace with actual API URL
         formDataForApi,
         {
           headers: {

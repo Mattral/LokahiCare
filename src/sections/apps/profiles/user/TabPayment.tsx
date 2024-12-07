@@ -58,9 +58,9 @@ const buttonStyle = { color: 'text.primary', fontWeight: 600 };
 const paymentCards: PaymentCardProps[] = [
   {
     id: 1,
-    name: 'Mattral Min',
+    name: 'Lorum Ipsum',
     number: 1234567890123456,
-    email: 'minmattral@gmail.com',
+    email: 'lorum.litten@gmail.com',
     expiry: new Date(),
     cvv: 789,
     securityCode: '123456',
@@ -68,9 +68,9 @@ const paymentCards: PaymentCardProps[] = [
   },
   {
     id: 2,
-    name: 'Mattral Min',
+    name: 'Lorum psum',
     number: 9876543210987654,
-    email: 'minmattral@gmail.com',
+    email: 'ipsum.ben@gmail.com',
     expiry: new Date(),
     cvv: 789,
     securityCode: '987654',
@@ -217,7 +217,7 @@ const TabPayment = () => {
           <Grid item xs={12}>
             <Formik
               initialValues={{
-                email: 'minmattral@gmail.com',
+                email: 'stebin.ben@paypal.co',
                 submit: null
               }}
               validationSchema={Yup.object().shape({

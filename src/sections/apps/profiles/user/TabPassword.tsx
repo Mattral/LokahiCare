@@ -201,8 +201,6 @@ const TabPassword = () => {
                   </Stack>
                 </Grid>
               </Grid>
-
-              
               <Grid item xs={12} sm={6}>
                 <Box sx={{ p: { xs: 0, sm: 2, md: 4, lg: 5 } }}>
                   <Typography variant="h5">New password must contain:</Typography>

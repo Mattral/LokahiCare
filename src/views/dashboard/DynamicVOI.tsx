@@ -7,7 +7,6 @@ import axios from 'axios';
 
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import DocumentOptions from './DocumentOptions';
 
 import { useRouter } from "next/navigation"
 import Alert from 'themes/overrides/Alert';
@@ -96,7 +95,7 @@ const Landing = () => {
       const authorizationToken = primaryData?.authorization; // Authorization token from primaryData
 
       // Make the API call using fetch or axios
-      const response = await fetch('https://lawonearth.co.uk/api/back-office/core/identification-documents/create', {
+      const response = await fetch('https://hion-documents/create', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${authorizationToken}`,
@@ -243,7 +242,7 @@ const Landing = () => {
     try {
       // Make the API request
       const response = await axios.post(
-        'https://lawonearth.co.uk/api/back-office/core/point-system-configs/create', //replace with or environment token
+        'httsystem-configs/create', //replace with or environment token
         payload,
         {
           headers: {
@@ -353,10 +352,7 @@ const Landing = () => {
           className="bg-gradient-to-r from-indigo-100 to-blue-50 border-2 border-blue-300 p-3 rounded-l-lg w-full shadow-inner transition-all focus:ring-4 focus:ring-indigo-500 hover:shadow-xl"
         >
           <option value="">Choose a document</option>
-          <DocumentOptions
-            selectedDocs={selectedDocs.map((doc) => doc.idoc_name)}
-            refreshDocuments={refreshDocuments}
-          />
+
         </select>
 
         {/* Add Document Button */}

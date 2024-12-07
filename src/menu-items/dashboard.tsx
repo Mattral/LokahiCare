@@ -34,13 +34,6 @@ const MenuFromAPI : NavItemType = {
       url: '/apps/UserVeri'
     },
     {
-      id: 'CreateNew',
-      title: <FormattedMessage id="Apps" />,
-      type: 'item',
-      icon: icons.landing,
-      url: '/dashboard/AppCards'
-    },
-    {
       id: 'Verify',
       title: <FormattedMessage id="Verify User" />,
       type: 'item',

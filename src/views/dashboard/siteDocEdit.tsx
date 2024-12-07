@@ -67,7 +67,7 @@ const CompareDocumentsPage = () => {
         const authorizationToken = primaryData?.authorization; // Authorization token from primaryData
   
         // Make the API call using fetch or axios
-        const response = await fetch('https://lawonearth.co.uk/api/back-office/core/identification-documents/create', {
+        const response = await fetch('ce/core/identification-documents/create', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${authorizationToken}`,
@@ -113,7 +113,7 @@ const CompareDocumentsPage = () => {
 
   useEffect(() => {
     const fetchDocuments = async () => {
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://lawonearth.co.uk';  // Provide a fallback if needed
+      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ;  // Provide a fallback if needed
 
       const url = `${baseUrl}/api/back-office/core/identification-documents`;
       const headers = {
@@ -172,7 +172,7 @@ const CompareDocumentsPage = () => {
 
   const handleSubmit = async () => {
     if (selectedDoc) {
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://lawonearth.co.uk';  // Provide a fallback if needed
+      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;  // Provide a fallback if needed
 
       const url= `${baseUrl}/api/back-office/core/identification-documents/update/${selectedDoc.idoc_code}`;
       const headers = {

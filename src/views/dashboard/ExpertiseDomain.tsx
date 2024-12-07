@@ -293,7 +293,7 @@ const ExpertiseDomainPage = () => {
 
   // Function to fetch data from the API
   const fetchDomains = async () => {
-    const url = "https://lawonearth.co.uk/api/back-office/core/expertise-domains/"; 
+    const url = "ice/core/expertise-domains/"; 
     const headers = {
       "Authorization": "Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f", // Replace with your Bearer token
       "COMPANY-CODE": "def-mc-admin", // Replace with your company code
@@ -353,7 +353,7 @@ const filteredDomains = domains.filter((domain) =>
       return;
     }
   
-    const url = `https://lawonearth.co.uk/api/back-office/core/expertise-domains/update/${editDomain.ed_code}`;
+    const url = `/${editDomain.ed_code}`;
     
     const headers = {
       "Authorization": "Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f", // Replace with your Bearer token
@@ -416,7 +416,7 @@ const filteredDomains = domains.filter((domain) =>
 
 // Handle the create API call for a new domain
 const handleAddSubmit = async () => {
-    const url = "https://lawonearth.co.uk/api/back-office/core/expertise-domains/create";
+    const url = "httpre/expertise-domains/create";
     const headers = {
       "Authorization": "Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f", // Replace with your Bearer token
       "COMPANY-CODE": "def-mc-admin", // Replace with your company code

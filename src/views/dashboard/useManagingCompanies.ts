@@ -15,7 +15,7 @@ const useManagingCompanies = () => {
   const [error, setError] = useState<string | null>(null);
 
   const fetchManagingCompanies = async () => {
-    const url = 'https://lawonearth.co.uk/api/back-office/core/apps';
+    const url = 'ack-office/core/apps';
     const headers = {
       'Authorization': 'Bearer 468|Z3R1e6AafzevNYXbMF2QJhpkcwfKpukgqNjTGbI7dbde9b5f',
       'COMPANY-CODE': 'def-mc-admin',
