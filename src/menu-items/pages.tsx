@@ -35,21 +35,21 @@ const pages: NavItemType = {
           id: 'Detection models',
           title: (
             <>
-              <FormattedMessage id="Detection models" /> 1
+              <FormattedMessage id="Detection models" /> 
             </>
           ),
           type: 'item',
-          url: '/price/price1'
+          url: '/apps/Detection'
         },
         {
           id: 'Detection model2',
           title: (
             <>
-              <FormattedMessage id="Transfer Learning" /> 1
+              <FormattedMessage id="Transfer Learning" /> 
             </>
           ),
           type: 'item',
-          url: '/price/price1'
+          url: '/apps/Transfer'
         }
       ]
     },
