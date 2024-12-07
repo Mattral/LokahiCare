@@ -139,7 +139,7 @@ const handleDateChange = (vdate: Date | any) => {
                 </ListItemAvatar>
                 <ListItemText
                   primary={<Typography variant="h5">Lorum Ipsum</Typography>}
-                  secondary={<Typography color="secondary">Advisor</Typography>}
+                  secondary={<Typography color="secondary">Doctor</Typography>}
                 />
               </ListItem>
             </List>
@@ -152,7 +152,7 @@ const handleDateChange = (vdate: Date | any) => {
                     <Grid item xs={12}>
                       <MainCard title="About me">
                         <Typography>
-                          Hello, I’m Advisor in an international company
+                          Experienced Doctor and NeuroSurgeon
                         </Typography>
                       </MainCard>
                     </Grid>
@@ -185,7 +185,7 @@ const handleDateChange = (vdate: Date | any) => {
                             <Grid container spacing={matchDownMD ? 0.5 : 3}>
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
-                                  <Typography color="secondary">Law professor (Year)</Typography>
+                                  <Typography color="secondary">medical professor (Year)</Typography>
                                   <Typography>2018 - Current</Typography>
                                 </Stack>
                               </Grid>

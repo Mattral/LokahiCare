@@ -26,7 +26,7 @@ const initialTechnologies = [
   {
     image: '/assets/images/landing/feature-components.png',
     title: 'Video Call App',
-    description: 'Schedule, Request, Add New Session, and Record pages makes your advisor journey complete.'
+    description: 'Schedule, Request, Add New Session, and Record pages makes your medical advisor journey complete.'
   },
   {
     image: '/assets/images/landing/feature-documentation.png',

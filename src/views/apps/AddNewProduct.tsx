@@ -17,8 +17,7 @@ import Typography from '@mui/material/Typography';
 // PROJECT IMPORTS
 import MainCard from 'components/MainCard';
 
-// ASSETS
-import { DocumentUpload } from 'iconsax-react';
+
 
 import TP from './timepic';
 
@@ -42,31 +41,9 @@ const prices = [
   }
 ];
 
-const quantities = [
-  {
-    value: 'one',
-    label: '1'
-  },
-  {
-    value: 'two',
-    label: '2'
-  },
-  {
-    value: 'three',
-    label: '3'
-  }
-];
 
-const statuss = [
-  {
-    value: 'in stock',
-    label: 'In Stock'
-  },
-  {
-    value: 'out of stock',
-    label: 'Out of Stock'
-  }
-];
+
+
 
 // ==============================|| ECOMMERCE - ADD PRODUCT ||============================== //
 
@@ -80,17 +57,7 @@ function AddNewProduct() {
     setPrice(event.target.value);
   };
 
-  const handleQuantity = (event: ChangeEvent<HTMLInputElement>) => {
-    setQuantity(event.target.value);
-  };
 
-  const handleStatus = (event: ChangeEvent<HTMLInputElement>) => {
-    setStatus(event.target.value);
-  };
-
-  const handleCancel = () => {
-    router.push(`/apps/e-commerce/product-list`);
-  };
 
   return (
     
@@ -126,53 +93,7 @@ function AddNewProduct() {
             </Grid>
           </MainCard>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <MainCard>
-            <Grid container direction="column" spacing={2}>
-              <Grid item xs={12}>
-                <InputLabel sx={{ mb: 1 }}>Qty</InputLabel>
-                <TextField placeholder="Select quantity" fullWidth select value={quantity} onChange={handleQuantity}>
-                  {quantities.map((option) => (
-                    <MenuItem key={option.value} value={option.value}>
-                      {option.label}
-                    </MenuItem>
-                  ))}
-                </TextField>
-              </Grid>
-              <Grid item xs={12}>
-                <InputLabel sx={{ mb: 1 }}>Status</InputLabel>
-                <TextField placeholder="Select status" fullWidth select value={status} onChange={handleStatus}>
-                  {statuss.map((option) => (
-                    <MenuItem key={option.value} value={option.value}>
-                      {option.label}
-                    </MenuItem>
-                  ))}
-                </TextField>
-              </Grid>
-              <Grid item xs={12}>
-                <Typography color="error.main">
-                  *{' '}
-                  <Typography component="span" color="textSecondary">
-                    Recommended resolution is 640*640 with file size
-                  </Typography>
-                </Typography>
-                <Button variant="outlined" color="secondary" startIcon={<DocumentUpload />} sx={{ mt: 1, textTransform: 'none' }}>
-                  Click to Upload
-                </Button>
-              </Grid>
-              <Grid item xs={12}>
-                <Stack direction="row" spacing={2} justifyContent="right" alignItems="center" sx={{ mt: 6 }}>
-                  <Button variant="outlined" color="secondary" onClick={handleCancel}>
-                    Cancel
-                  </Button>
-                  <Button variant="contained" sx={{ textTransform: 'none' }}>
-                    Add new Product
-                  </Button>
-                </Stack>
-              </Grid>
-            </Grid>
-          </MainCard>
-        </Grid>
+        
       </Grid>
     </MainCard>
   );

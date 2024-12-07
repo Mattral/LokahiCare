@@ -152,7 +152,7 @@ const handleDateChange = (vdate: Date | any) => {
                     <Grid item xs={12}>
                       <MainCard title="About me">
                         <Typography>
-                          Hello, I’m Advisor in an international company
+                          Experienced Neuro Surgeon Doctor
                         </Typography>
                       </MainCard>
                     </Grid>
@@ -170,7 +170,7 @@ const handleDateChange = (vdate: Date | any) => {
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
                                   <Typography color="secondary">Institute</Typography>
-                                  <Typography>Harvard Law School</Typography>
+                                  <Typography>Harvard Medical School</Typography>
                                 </Stack>
                               </Grid>
                             </Grid>
@@ -227,21 +227,20 @@ const handleDateChange = (vdate: Date | any) => {
                 <Grid item xs={12} sm={4} xl={3}>
                     <MainCard title="Domains and Fee per min">
                       <Stack spacing={1}>
-                        <Button variant="outlined">Cooperate Law -5$</Button>
-                        <Button variant="outlined">Tax Law -8#</Button>
-                        <Button variant="outlined">I.P Law -4$</Button>
-                        <Button variant="outlined">Probono</Button>
+                        <Button variant="outlined">Regular -5$</Button>
+                        <Button variant="outlined">Visit Home -8$</Button>
+                        <Button variant="outlined">Charity -0$</Button>
+        
                       </Stack>
                     </MainCard>
                     <MainCard title="Preferred Currency">
                       <Stack spacing={1}>
                         <Button variant="outlined">USD</Button>
-                        <Button variant="outlined">AUD</Button>
+                        <Button variant="outlined">Euro</Button>
                       </Stack>
                     </MainCard>
-                    <MainCard title="Advisor's Availibility">
+                    <MainCard title="Doctor's Availibility">
                       <Stack spacing={1}>
-                        <Button variant="outlined">Probono- Weekends</Button>
                         <Button variant="outlined">Monday</Button>
                         <Button variant="outlined">Tuesday</Button>
                         <Button disabled>Wednesday</Button>

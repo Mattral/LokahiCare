@@ -70,7 +70,7 @@ function StickyActionBarPage() {
                       Personal Information
                     </Typography>
                     <Typography variant="body2" sx={{ mb: 2 }}>
-                      These information are required to verify you as our legitimate Advisor.
+                      These information are required to verify you as our legitimate Medical Professional.
                     </Typography>
                   </Grid>
                 </Grid>

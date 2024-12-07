@@ -105,7 +105,7 @@ export default function CustomerPreview({ customer, open, onClose, editCustomer 
                     <Grid item xs={12}>
                       <MainCard title="About me">
                         <Typography>
-                          Hello, Myself {customer.name}, I’m {customer.role} in an international company, {customer.about}
+                          Hello, {customer.name}, I’m Doctor in an Local Hospital
                         </Typography>
                       </MainCard>
                     </Grid>

@@ -69,7 +69,7 @@
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
                                   <Typography color="secondary">Institute</Typography>
-                                  <Typography>Harvard Law School</Typography>
+                                  <Typography>Harvard Medical School</Typography>
                                 </Stack>
                               </Grid>
                             </Grid>
@@ -84,7 +84,7 @@
                             <Grid container spacing={matchDownMD ? 0.5 : 3}>
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
-                                  <Typography color="secondary">Law professor </Typography>
+                                  <Typography color="secondary">medical professor </Typography>
                                   <Typography>2018 - Current</Typography>
                                 </Stack>
                               </Grid>

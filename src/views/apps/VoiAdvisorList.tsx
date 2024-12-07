@@ -454,7 +454,7 @@ const ClientList: FC = () => {
 
       {selectedClient && (
         <Dialog open={open} onClose={handleClose}>
-          <DialogTitle>Advisor Details</DialogTitle>
+          <DialogTitle>Doctor Details</DialogTitle>
           <DialogContent>
             <Card>
               <CardContent>

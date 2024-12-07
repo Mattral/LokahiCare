@@ -172,7 +172,7 @@ export default function CustomerPreview({ customer, open, onClose, editCustomer 
                             <Grid container spacing={matchDownMD ? 0.5 : 3}>
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
-                                  <Typography color="secondary">Law professor (Year)</Typography>
+                                  <Typography color="secondary">medical professor (Year)</Typography>
                                   <Typography>2018 - Current</Typography>
                                 </Stack>
                               </Grid>

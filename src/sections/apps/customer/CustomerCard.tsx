@@ -103,7 +103,7 @@ const CustomerCard = ({ customer }: { customer: CustomerList }) => {
                   primary={<Typography variant="subtitle1">{customer.name}</Typography>}
                   secondary={
                     <Typography variant="caption" color="secondary">
-                      {customer.role}
+                      Medical professional
                     </Typography>
                   }
                 />

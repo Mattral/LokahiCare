@@ -169,7 +169,7 @@ const NotificationPage = () => {
                         primary={
                           <Typography variant="h6">
                             <Typography component="span" variant="subtitle1">
-                              Legal Advisor
+                              Doctor
                             </Typography>{' '}
                             Re-scheduled your meeting date.
                           </Typography>

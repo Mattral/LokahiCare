@@ -82,7 +82,7 @@ const FooterBlock = ({ isFull }: showProps) => {
                         Discover lorem ipsum for Clients
                       </FooterLink>
                       <FooterLink href="#" target="_blank" underline="none">
-                        Discover lorem ipsum for Advisors
+                        Discover lorem ipsum for Doctors
                       </FooterLink>
                       <FooterLink href="#" target="_blank" underline="none">
                         How to join as an advisor
@@ -120,7 +120,7 @@ const FooterBlock = ({ isFull }: showProps) => {
                         Customer Terms
                       </FooterLink>
                       <FooterLink href="#" target="_blank" underline="none">
-                        Advisor Terms
+                        Doctor Terms
                       </FooterLink>
                     </Stack>
                   </Stack>
