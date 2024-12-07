@@ -15,7 +15,7 @@ const icons = {
 
 const MenuFromAPI : NavItemType = {
   id: 'group-dashboard-loading',
-  title: <FormattedMessage id="dashboard" />,
+  title: <FormattedMessage id="Pre-requisites" />,
   icon: icons.loading,
   type: 'group',
   children: [
@@ -38,7 +38,7 @@ const MenuFromAPI : NavItemType = {
       title: <FormattedMessage id="Verify User" />,
       type: 'item',
       icon: icons.validation,
-      url: '/apps/AdminVOI'
+      url: '/apps/VOI'
     }
   ]
 };

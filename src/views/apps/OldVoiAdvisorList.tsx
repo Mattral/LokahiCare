@@ -15,13 +15,10 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  Card,
-  CardContent,
   Grid,
   Button
 } from '@mui/material';
 import { Email, Search, CheckCircle, Cancel, Chat, RemoveCircle } from '@mui/icons-material';
-import { useRouter } from 'next/navigation';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import List from '@mui/material/List';
@@ -37,6 +34,7 @@ import SimpleBar from 'components/third-party/SimpleBar';
 import MainCard from 'components/MainCard';
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
+import AiChatbot from 'components/aiChat';
 
 import PdfModal from 'components/PdfModal';
 
@@ -143,7 +141,7 @@ const ClientList: FC = () => {
       <Typography variant="h4" gutterBottom>
         Clients Management
       </Typography>
-
+      <AiChatbot/>
       {/* Unverified Clients */}
       <Box my={4}>
         <Typography variant="h6">Unverified </Typography>
