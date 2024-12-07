@@ -186,7 +186,7 @@ const Header = () => {
                       <ListItemIcon>
                         <Minus color={theme.palette.secondary.main} />
                       </ListItemIcon>
-                      <ListItemText primary="All Components" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                      <ListItemText primary="Always be with you" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                     </ListItemButton>
                   </Links>
                   <Links sx={linksSx} href="#" target="_blank">
@@ -194,7 +194,7 @@ const Header = () => {
                       <ListItemIcon>
                         <Minus color={theme.palette.secondary.main} />
                       </ListItemIcon>
-                      <ListItemText primary="Free Version" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                      <ListItemText primary="AI Therapist" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                     </ListItemButton>
                   </Links>
                   <Links sx={linksSx} href="#" target="_blank">
@@ -202,7 +202,7 @@ const Header = () => {
                       <ListItemIcon>
                         <Minus color={theme.palette.secondary.main} />
                       </ListItemIcon>
-                      <ListItemText primary="Documentation" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                      <ListItemText primary="OCR Medical Report AI" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                     </ListItemButton>
                   </Links>
                   <Links sx={linksSx} href="#" target="_blank">
@@ -210,7 +210,7 @@ const Header = () => {
                       <ListItemIcon>
                         <Minus color={theme.palette.secondary.main} />
                       </ListItemIcon>
-                      <ListItemText primary="Support" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                      <ListItemText primary="Consult with Doctors" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                     </ListItemButton>
                   </Links>
                   <Links

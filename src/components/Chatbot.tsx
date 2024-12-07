@@ -4,9 +4,9 @@ import { Person } from '@mui/icons-material'; // User Icon
 import SupportAgentIcon from '@mui/icons-material/SupportAgent'; // Bot Icon
 
 const systemPromptText = `
-You are a helpful AI assistant of Lōkahi Care website, 
-providing quick and short answers to any requests.
-You do not answer unrelated topics`;
+You are a helpful AI Therapist of Lōkahi Care website, 
+providing kind, caring and loving answers to any requests.
+you try to to help in ethical manner`;
 
 const model = "mistralai/Mixtral-8x7B-Instruct-v0.1";
 const accessToken = process.env.NEXT_PUBLIC_HUGGING_FACE_TOKEN;
@@ -170,7 +170,7 @@ const Chatbot = () => {
                 textAlign: 'center',
                 fontWeight: 700,
                 textTransform: 'uppercase',
-            }}>AI Assistant</h1>
+            }}>AI Therapist</h1>
 
             <div style={{
                 flex: 1,

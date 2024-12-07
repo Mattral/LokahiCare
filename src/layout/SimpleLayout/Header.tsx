@@ -194,8 +194,8 @@ const Header: React.FC<HeaderProps> = ({ refs }) => {
                 <Logo reverse to="/" />
               </Typography>
               <Stack direction="row" spacing={2}>
-                <Button variant="outlined" color="warning" component={Link} href="#" sx={{ mt: 0.25 }}>
-                  Fully Suppot
+                <Button variant="outlined" color="warning" component={Link} href="/dashboard/default" sx={{ mt: 0.25 }}>
+                  Dashboard
                 </Button>
 
                 <IconButton size="large" color="secondary" onClick={drawerToggler(true)} sx={{ p: 1 }}>
@@ -228,7 +228,7 @@ const Header: React.FC<HeaderProps> = ({ refs }) => {
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
                         </ListItemIcon>
-                        <ListItemText primary="All Services" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                        <ListItemText primary="Always be with you" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Links>
                     <Links sx={linksSx} href="#" target="_blank">
@@ -236,7 +236,7 @@ const Header: React.FC<HeaderProps> = ({ refs }) => {
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
                         </ListItemIcon>
-                        <ListItemText primary="Probono" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                        <ListItemText primary="AI Therapist" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Links>
                     <Links sx={linksSx} href="#" target="_blank">
@@ -244,7 +244,7 @@ const Header: React.FC<HeaderProps> = ({ refs }) => {
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
                         </ListItemIcon>
-                        <ListItemText primary="Document Generation" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                        <ListItemText primary="OCR Medical Report AI" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Links>
                     <Links sx={linksSx} href="#" target="_blank">
@@ -252,7 +252,7 @@ const Header: React.FC<HeaderProps> = ({ refs }) => {
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
                         </ListItemIcon>
-                        <ListItemText primary="Support" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
+                        <ListItemText primary="Consult with Doctors" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Links>
                     <Links
