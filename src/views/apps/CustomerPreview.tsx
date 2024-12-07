@@ -25,7 +25,6 @@ import Alert from '@mui/material/Alert';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 
 // PROJECT IMPORTS
-import AlertCustomerDelete from './AlertCustomerDelete';
 import ListCard from './export-pdf/ListCard';
 import MainCard from 'components/MainCard';
 import Avatar from 'components/@extended/Avatar';

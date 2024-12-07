@@ -1,38 +1,96 @@
-#CoreApp
+# LokahiCare: AI-Driven Healthcare Platform 🌐💊  
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+LokahiCare is a groundbreaking healthcare platform that seamlessly integrates artificial intelligence with modern healthcare needs. Designed for both patients and healthcare professionals, LokahiCare delivers accessible, personalized, and secure healthcare solutions—all on a single platform.  
 
-## Getting Started
+---
 
-First, run the development server:
+## 🌟 **Key Features**  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### **For Patients**  
+- **Video Consultations**: Schedule and conduct virtual appointments with verified healthcare professionals.  
+- **AI-Powered Chatbots**:  
+  - General healthcare guidance chatbot for basic inquiries.  
+  - Therapist chatbot for mental health support.  
+- **Disease Prediction and Detection**:  
+  - Predict risks of diabetes using the ADA Risk Test.  
+  - Detect diseases like lung cancer, tuberculosis, COVID-19, and pneumonia from medical images.  
+- **Medical Document Analysis**:  
+  - Upload PDFs or images of medical documents and interact with them using OCR-powered AI.  
+- **Collaborative Whiteboard**: Enhance communication during video consultations with real-time visual tools.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **For Healthcare Professionals**  
+- **Identity Verification**: Ensure credibility with a thorough verification process.  
+- **Train Your AI Models**: Build custom disease-detection models directly on the platform using transfer learning.  
+- **Disease Detection Tools**: Utilize pre-built AI models for accurate diagnostics.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+## 🛠 **Technology Stack**  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend**:  
+  - Built using **Next.js** for a responsive, user-friendly experience.  
 
-## Learn More
+- **AI and Machine Learning**:  
+  - **TensorFlow.js** and **ml5.js** for in-browser AI model inference and training.  
+  - **MobileNet** as the backbone model, trained using cross-entropy loss for classification tasks.  
 
-To learn more about Next.js, take a look at the following resources:
+- **OCR (Optical Character Recognition)**:  
+  - Enables the analysis of uploaded medical documents (images or PDFs).  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **WebRTC**:  
+  - Powers seamless video consultations.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎯 **Impact**  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+LokahiCare bridges gaps in healthcare by making advanced AI tools accessible to patients and professionals alike.  
+- Promotes proactive health management.  
+- Reduces disparities in healthcare access and affordability.  
+- Streamlines remote care, diagnostics, and mental health support.  
+- Empowers professionals with AI-driven tools for research and diagnostics.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 🚀 **How to Use LokahiCare**  
+
+1. **Sign Up or Log In**:  
+   Create an account as a patient or healthcare professional.  
+
+2. **Access Services**:  
+   - Patients can schedule consultations, chat with chatbots, or upload medical documents for analysis.  
+   - Professionals can utilize diagnostic tools or train custom AI models.  
+
+3. **Collaborate**:  
+   Use collaborative tools like the whiteboard to enhance virtual consultations.  
+
+4. **Stay Engaged**:  
+   Monitor health trends, download reports, and get personalized insights.  
+
+---
+
+## Related Github repos
+
+- [Medical OCR](https://github.com/Mattral/MedOCRAssistant)  
+- [Detect](https://github.com/Mattral/CareNetDetect)
+- [TransferLearning](https://github.com/Mattral/Transfer-Learning-Web)
+
+---
+
+## 📜 **Contributing**  
+
+We welcome contributions! Whether it's improving the user experience or adding new features, feel free to open issues and submit pull requests.  
+
+---
+
+## 📧 **Contact Us**  
+
+For support, inquiries, or feedback:  
+- Email: to be announced
+- Website: [LokahiCare](https://lokahi-care-ai.vercel.app/)  
+
+---
+
+## 📄 **License**  
+
+LokahiCare is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).  

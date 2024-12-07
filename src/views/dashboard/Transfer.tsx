@@ -1,5 +1,5 @@
 "use client"
-declare var ml5: any;
+declare var ml5: any; //tensorflow.js
 import React, { useState, useEffect, useRef } from 'react';
 
 const ImageClassifier: React.FC = () => {

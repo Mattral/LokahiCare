@@ -19,9 +19,9 @@ const NavCard = () => (
     <Stack alignItems="center" spacing={2.5}>
       <CardMedia component="img" image={avatar} />
       <Stack alignItems="center">
-        <Typography variant="h5">Chat With AI?</Typography>
+        <Typography variant="h5">need Therapist AI?</Typography>
         <Typography variant="h6" color="secondary">
-          Quicker Response Time
+          always be there for you!
         </Typography>
       </Stack>
       <AnimateButton>

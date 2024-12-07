@@ -6,7 +6,6 @@
 import SimpleLayout from 'layout/SimpleLayout';
 import Pricing1Page from 'views/price/Pricing1';
 //import CreateNewApp from 'sections/landing/CreateNewApp';
-//import DashboardDomain from 'sections/landing/AppCards';
 
 const Landing = () => {
   return (
