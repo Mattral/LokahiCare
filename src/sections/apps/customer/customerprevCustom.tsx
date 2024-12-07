@@ -226,14 +226,14 @@ export default function CustomerPreview({ customer, open, onClose, editCustomer 
                             <Grid container spacing={matchDownMD ? 0.5 : 3}>
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
-                                  <Typography color="secondary">Law associate (Year)</Typography>
+                                  <Typography color="secondary">Professor associate (Year)</Typography>
                                   <Typography>2016-2019</Typography>
                                 </Stack>
                               </Grid>
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
                                   <Typography color="secondary">Company</Typography>
-                                  <Typography>LegalMe Ltd</Typography>
+                                  <Typography>Hostital Ltd</Typography>
                                 </Stack>
                               </Grid>
                             </Grid>
@@ -242,7 +242,7 @@ export default function CustomerPreview({ customer, open, onClose, editCustomer 
                             <Grid container spacing={matchDownMD ? 0.5 : 3}>
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
-                                  <Typography color="secondary">Tax lawyer (Year)</Typography>
+                                  <Typography color="secondary">Medical Professional (Year)</Typography>
                                   <Typography>2013-2016</Typography>
                                 </Stack>
                               </Grid>

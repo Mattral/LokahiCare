@@ -42,10 +42,20 @@ const pages: NavItemType = {
           url: '/apps/Detection'
         },
         {
+          id: 'OCR Medical Document',
+          title: (
+            <>
+              <FormattedMessage id="OCR Medical Document" /> 
+            </>
+          ),
+          type: 'item',
+          url: '/apps/MedOCR'
+        },
+        {
           id: 'Detection model2',
           title: (
             <>
-              <FormattedMessage id="Transfer Learning" /> 
+              <FormattedMessage id="Train your Own Disease Classifier" /> 
             </>
           ),
           type: 'item',
