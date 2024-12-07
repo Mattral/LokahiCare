@@ -60,7 +60,7 @@ const applications: NavItemType = {
           id: 'Recordings',
           title: <FormattedMessage id="Video Call" />,
           type: 'item',
-          url: '/apps/Videocall/product-list'
+          url: '/session'
         },
         {
           id: 'add-new-schedule',
