@@ -2,7 +2,7 @@
 import { FormattedMessage } from 'react-intl';
 
 // ASSETS
-import { KyberNetwork, Story, Messages2, Calendar1, Profile2User, Bill, UserSquare, ShoppingBag } from 'iconsax-react';
+import { KyberNetwork, Story, Messages2, Calendar1, Profile2User,PresentionChart, Bill, UserSquare, ShoppingBag } from 'iconsax-react';
 
 // TYPE
 import { NavItemType } from 'types/menu';
@@ -16,6 +16,7 @@ const icons = {
   invoice: Bill,
   statistics: Story,
   profile: UserSquare,
+  chart: PresentionChart,
   ecommerce: ShoppingBag
 };
 
@@ -27,14 +28,6 @@ const applications: NavItemType = {
   icon: icons.applications,
   type: 'group',
   children: [
-    {
-      id: 'Generate Legal Document',
-      title: <FormattedMessage id="WhiteBoard Chat" />,
-      type: 'item',
-      url: '/forms/Whiteboard',
-      icon: icons.statistics
-    },
-
     
     {
       id: 'profile',
@@ -42,6 +35,20 @@ const applications: NavItemType = {
       type: 'item',
       url: '/apps/profiles/user/personal',
       icon: icons.profile,
+    },
+    {
+      id: 'Generate Legal Document',
+      title: <FormattedMessage id="WhiteBoard Chat" />,
+      type: 'item',
+      url: '/forms/Whiteboard',
+      icon: icons.statistics
+    },
+    {
+      id: 'Diabetes Risk Prediction',
+      title: <FormattedMessage id="Predict Diabetes Risk" />,
+      type: 'item',
+      url: '/apps/PredDiabetes',
+      icon: icons.chart
     },
     
     {
