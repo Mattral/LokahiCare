@@ -55,7 +55,7 @@ const pages: NavItemType = {
           id: 'Detection model2',
           title: (
             <>
-              <FormattedMessage id="Train your Own Disease Classifier" /> 
+              <FormattedMessage id="Train New Classifier Model" /> 
             </>
           ),
           type: 'item',
