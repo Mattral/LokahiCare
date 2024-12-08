@@ -2,7 +2,7 @@
 import { FormattedMessage } from 'react-intl';
 
 // ASSETS
-import { Book1, I24Support, Security, MessageProgramming, DollarSquare, Airplane } from 'iconsax-react';
+import { Book1, I24Support, Security,CpuCharge, MessageProgramming, DollarSquare, Airplane } from 'iconsax-react';
 
 // TYPE
 import { NavItemType } from 'types/menu';
@@ -12,6 +12,7 @@ const icons = {
   page: Book1,
   authentication: Security,
   maintenance: MessageProgramming,
+  plugins: CpuCharge,
   pricing: DollarSquare,
   contactus: I24Support,
   landing: Airplane
@@ -29,7 +30,7 @@ const pages: NavItemType = {
       id: 'price',
       title: <FormattedMessage id="Medical AI" />,
       type: 'collapse',
-      icon: icons.pricing,
+      icon: icons.plugins,
       children: [
         {
           id: 'Detection models',
@@ -60,6 +61,16 @@ const pages: NavItemType = {
           ),
           type: 'item',
           url: '/apps/Transfer'
+        },
+        {
+          id: 'Detection model3',
+          title: (
+            <>
+              <FormattedMessage id="Visual Aid (beta)" /> 
+            </>
+          ),
+          type: 'item',
+          url: '/apps/ObjDetect'
         }
       ]
     },
