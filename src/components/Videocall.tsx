@@ -93,9 +93,16 @@ const Videocall = ({ slug, JWT }: { slug: string; JWT: string }) => {
   const [isAudioMuted, setIsAudioMuted] = useState(false);
 
   useEffect(() => {
-    if (userName && !isDialogOpen) {
+    // Set the userName to "User-1" automatically and hide the dialog
+    if (!userName) {
+      setUserName("User-1");
+      setIsDialogOpen(false);  // Close the dialog immediately
+    }
+  
+    if (userName) {
       joinSession();
     }
+  
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userName, isDialogOpen]);
 

@@ -286,10 +286,10 @@ const drawLines = () => {
         <h2 style={{ color: "#333333" }}>Create Node</h2>
         <div>
           <Button variant="contained" color="primary" onClick={() => openFormForNode("single")} fullWidth>
-            Add Plain Text Node
+            Add a Block
           </Button>
           <Button variant="contained" color="info" fullWidth onClick={openBranchLinksDialogHandler}>
-            See Branch Links
+            See Branches
           </Button>
 
           <Button variant="outlined" color="warning" fullWidth onClick={captureImage}>
