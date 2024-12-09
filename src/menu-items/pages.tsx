@@ -40,7 +40,7 @@ const pages: NavItemType = {
             </>
           ),
           type: 'item',
-          url: '/apps/Detection'
+          url: '/apps/AutoAnalyst'
         },
         {
           id: 'Detection models',
