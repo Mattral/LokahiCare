@@ -74,6 +74,7 @@ LokahiCare bridges gaps in healthcare by making advanced AI tools accessible to 
 - [Medical OCR](https://github.com/Mattral/MedOCRAssistant)  
 - [Detect](https://github.com/Mattral/CareNetDetect)
 - [TransferLearning](https://github.com/Mattral/Transfer-Learning-Web)
+- [Health Data Analyst](https://lokahi-care-analyst.streamlit.app)
 
 ---
 
@@ -86,7 +87,7 @@ We welcome contributions! Whether it's improving the user experience or adding n
 ## 📧 **Contact Us**  
 
 For support, inquiries, or feedback:  
-- Email: to be announced
+- Email: mattralminn@gmail.com
 - Website: [LokahiCare](https://lokahi-care-ai.vercel.app/)  
 
 ---

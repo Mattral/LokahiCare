@@ -124,6 +124,7 @@
     "react-window": "^1.8.10",
     "react-zoom-pan-pinch": "^3.3.0",
     "react18-input-otp": "^1.1.4",
+    "recharts": "^2.14.1",
     "sass": "^1.79.3",
     "sharp": "^0.33.5",
     "simplebar-react": "^3.2.4",

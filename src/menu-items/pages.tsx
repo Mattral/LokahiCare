@@ -33,6 +33,16 @@ const pages: NavItemType = {
       icon: icons.plugins,
       children: [
         {
+          id: 'Health Data Analyst',
+          title: (
+            <>
+              <FormattedMessage id="Health Data Analyst" /> 
+            </>
+          ),
+          type: 'item',
+          url: '/apps/Detection'
+        },
+        {
           id: 'Detection models',
           title: (
             <>
