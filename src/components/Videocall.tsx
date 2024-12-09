@@ -79,7 +79,7 @@ const Videocall = ({ slug, JWT }: { slug: string; JWT: string }) => {
   const jwt = JWT;
   const [inSession, setInSession] = useState(false);
   const [userName, setUserName] = useState("");
-  const [isDialogOpen, setIsDialogOpen] = useState(true);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false); // State for chat popup
   const [elapsedTime, setElapsedTime] = useState(0); // State for elapsed time
   const [isScreenSharing, setIsScreenSharing] = useState(false); // State for screen sharing
@@ -96,7 +96,7 @@ const Videocall = ({ slug, JWT }: { slug: string; JWT: string }) => {
     // Set the userName to "User-1" automatically and hide the dialog
     if (!userName) {
       setUserName("User-1");
-      setIsDialogOpen(false);  // Close the dialog immediately
+     //setIsDialogOpen(false);  // Close the dialog immediately
     }
   
     if (userName) {
@@ -116,7 +116,7 @@ const Videocall = ({ slug, JWT }: { slug: string; JWT: string }) => {
 
   const handleJoin = () => {
     if (userName.trim() !== "") {
-      setIsDialogOpen(false);
+      //setIsDialogOpen(false);
     }
   };
 
