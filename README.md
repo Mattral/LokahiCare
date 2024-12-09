@@ -93,4 +93,4 @@ For support, inquiries, or feedback:
 
 ## 📄 **License**  
 
-LokahiCare is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).  
+LokahiCare is licensed under the [MIT LICENSE](LICENSE).  
