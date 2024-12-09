@@ -17,6 +17,17 @@ const EmbedPage = () => {
 
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
+
+      <div className="mb-12">
+        <h2 className="text-3xl font-semibold leading-snug text-gray-800 transition-all duration-500 hover:text-blue-600">
+          Train and use your own disease detection models <span className="text-indigo-600 font-bold"> right in this website </span> <br />
+          <h3 className="text-xl font-medium leading-relaxed text-gray-700 mt-4">
+          Struggling to find pre-trained models or an ML expert? Lokahi Care automates the entire machine learning training process for you! <br/>
+          With just a few clicks, you can train models effortlessly, <span className="text-indigo-600 font-bold">powered by TensorFlow.js and deep learning technology.</span>
+          </h3>
+        </h2>
+      </div>
+
       {/* Fallback link to the direct app if iframe doesn't load */}
       {!iframeLoaded && (
         <div>
@@ -29,12 +40,12 @@ const EmbedPage = () => {
           </a>
         </div>
       )}
-      <AiChatbot/>
+      <AiChatbot />
       {/* Embed the Streamlit app using an iframe */}
-      <iframe 
+      <iframe
         src="https://transfer-learning-web.vercel.app/"
-        width="100%" 
-        height="800px" 
+        width="100%"
+        height="800px"
         style={{ border: 'none', borderRadius: '8px' }}
         onLoad={handleIframeLoad}  // Trigger onLoad event when iframe is successfully loaded
         onError={handleIframeError}  // Trigger onError event when iframe fails to load

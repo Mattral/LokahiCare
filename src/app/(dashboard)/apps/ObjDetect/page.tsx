@@ -124,8 +124,10 @@ const ObjectDetection = () => {
 
     return (
         <div style={styles.container}>
-            <h1>Object Detection using TensorFlow.js</h1>
 
+            <h2 className="text-3xl font-semibold leading-snug text-gray-800 transition-all duration-500 hover:text-blue-600 text-center">
+                Visual Aid <span className="text-indigo-600 font-bold"> Object Detection using TensorFlow.js </span> <br />
+            </h2>
             <div>
                 <button onClick={toggleMode} style={styles.button}>
                     {isWebcam ? 'Switch to Image Upload' : 'Switch to Webcam'}
