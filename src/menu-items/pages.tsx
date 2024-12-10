@@ -33,10 +33,10 @@ const pages: NavItemType = {
       icon: icons.plugins,
       children: [
         {
-          id: 'Health Data Analyst',
+          id: 'Interactive Data Explorer',
           title: (
             <>
-              <FormattedMessage id="Health Data Analyst" /> 
+              <FormattedMessage id="Interactive Data Explorer" /> 
             </>
           ),
           type: 'item',

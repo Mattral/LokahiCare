@@ -74,7 +74,7 @@ LokahiCare bridges gaps in healthcare by making advanced AI tools accessible to 
 - [Medical OCR](https://github.com/Mattral/MedOCRAssistant)  
 - [Detect](https://github.com/Mattral/CareNetDetect)
 - [TransferLearning](https://github.com/Mattral/Transfer-Learning-Web)
-- [Health Data Analyst](https://lokahi-care-analyst.streamlit.app)
+- [Interactive Data Explorer](https://lokahi-care-analyst.streamlit.app)
 
 ---
 
