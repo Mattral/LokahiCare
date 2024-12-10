@@ -39,7 +39,7 @@ const FileUpload = ({ setFormData }: any) => {
   const handleCloseSnackbar = () => setOpenSnackbar(false);
 
   return (
-    <Grid container spacing={3} sx={{ marginTop: '30px' }}>
+    <Grid container spacing={3} sx={{ marginTop: '5px' }}>
       
       {/* Centered Table */}
       <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>

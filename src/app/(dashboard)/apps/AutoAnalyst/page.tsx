@@ -19,15 +19,15 @@ const EmbedPage = () => {
         <div className="text-center my-10 px-4">
             {/* Premium Styled Text */}
             <div className="mb-12">
-                <h2 className="text-3xl font-semibold leading-snug text-gray-800 transition-all duration-500 hover:text-blue-600">
+                <h2 className="text-3xl font-semibold leading-snug text-gray-800 transition-all duration-500 hover:text-blue-600 text-center">
                     Unlock the full potential of data analysis with <span className="text-indigo-600 font-bold">effortless precision.</span> <br />
                     <span className="text-lg font-light text-gray-500">
                         Experience intuitive insights and seamless processing.
                     </span>
                 </h2>
                 <h3 className="text-xl font-medium leading-relaxed text-gray-700 mt-4">
-                    This sophisticated platform is dedicated to processing the valuable datasets provided by our esteemed sponsor, <strong className="text-indigo-600">Milliman MedInsight</strong>. <br />
-                    By proceeding, I provide my full consent to the complete deletion of all data following the conclusion of this event.
+                    This sophisticated platform is dedicated to processing the valuable datasets <br/>provided by our esteemed sponsor, <strong className="text-indigo-600">Milliman MedInsight</strong>. <br />
+                    By proceeding, I provide my full consent to the complete deletion of all data <br/>following the conclusion of this event.
                 </h3>
             </div>
 

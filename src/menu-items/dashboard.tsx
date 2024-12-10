@@ -1,5 +1,5 @@
 import { FormattedMessage } from 'react-intl';
-import { Home3, HomeTrendUp, Box1, Airplane, PasswordCheck,Profile2User, Story } from 'iconsax-react';
+import { Home3, HomeTrendUp, UserSquare, Box1, Airplane, PasswordCheck,Profile2User, Story } from 'iconsax-react';
 import { NavItemType } from 'types/menu';
 //import { useGetMenu } from 'api/menu';
 
@@ -10,6 +10,7 @@ const icons = {
   loading: Home3,
   validation: PasswordCheck,
   statistics: Story,
+  profile: UserSquare,
   landing: Airplane
 };
 
@@ -28,17 +29,24 @@ const MenuFromAPI : NavItemType = {
     },
     {
       id: 'CreateNew',
-      title: <FormattedMessage id="User Verification" />,
+      title: <FormattedMessage id="Verify your Identity" />,
       type: 'item',
       icon: icons.statistics,
       url: '/apps/UserVeri'
     },
     {
       id: 'Verify',
-      title: <FormattedMessage id="Verify User" />,
+      title: <FormattedMessage id="(Admin) Manage Verification" />,
       type: 'item',
       icon: icons.validation,
       url: '/apps/VOI'
+    },
+    {
+      id: 'profile',
+      title: <FormattedMessage id="profile" />,
+      type: 'item',
+      url: '/apps/profiles/user/personal',
+      icon: icons.profile,
     }
   ]
 };

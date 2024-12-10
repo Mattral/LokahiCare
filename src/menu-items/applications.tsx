@@ -2,7 +2,7 @@
 import { FormattedMessage } from 'react-intl';
 
 // ASSETS
-import { KyberNetwork, Story, Messages2, Calendar1, Profile2User,PresentionChart, Bill, UserSquare, ShoppingBag } from 'iconsax-react';
+import { KyberNetwork, Story, Messages2, Calendar1, Profile2User,PresentionChart, Bill, ShoppingBag } from 'iconsax-react';
 
 // TYPE
 import { NavItemType } from 'types/menu';
@@ -15,7 +15,6 @@ const icons = {
   customer: Profile2User,
   invoice: Bill,
   statistics: Story,
-  profile: UserSquare,
   chart: PresentionChart,
   ecommerce: ShoppingBag
 };
@@ -28,14 +27,7 @@ const applications: NavItemType = {
   icon: icons.applications,
   type: 'group',
   children: [
-    
-    {
-      id: 'profile',
-      title: <FormattedMessage id="profile" />,
-      type: 'item',
-      url: '/apps/profiles/user/personal',
-      icon: icons.profile,
-    },
+
     {
       id: 'Generate Legal Document',
       title: <FormattedMessage id="WhiteBoard Chat" />,

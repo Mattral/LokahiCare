@@ -138,8 +138,8 @@ const ClientList: FC = () => {
   return (
     <Box>
       <ToastContainer />
-      <Typography variant="h4" gutterBottom>
-        Clients Management
+      <Typography variant="h3" gutterBottom>
+        These are the Medical Professionals submitting docs to provide medical service
       </Typography>
       <AiChatbot/>
       {/* Unverified Clients */}
