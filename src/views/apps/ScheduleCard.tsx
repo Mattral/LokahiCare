@@ -139,6 +139,15 @@ const CustomerCardPage = () => {
   return (
     <>
       <Box sx={{ position: 'relative', marginBottom: 3 }}>
+
+      <div className="mb-12">
+        <h2 className="text-3xl font-semibold leading-snug text-gray-800 transition-all duration-500 hover:text-blue-600 text-center">
+          Schedule a Video Session with <span className="text-indigo-600 font-bold"> Doctors or Physicians Around the World </span> <br />
+        </h2>
+        <h3 className="text-xl font-medium leading-relaxed text-gray-700 mt-4 text-center">
+          Without leaving your home, unless necessary
+        </h3>
+      </div>
         <Stack direction="row" alignItems="center">
           <Stack
             direction={matchDownSM ? 'column' : 'row'}
