@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect  } from 'react';
 import axios from 'axios';
 import { Person } from '@mui/icons-material'; // User Icon
