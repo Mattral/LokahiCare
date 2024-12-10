@@ -36,7 +36,7 @@ const MenuFromAPI : NavItemType = {
     },
     {
       id: 'Verify',
-      title: <FormattedMessage id="(Admin) Manage Verification" />,
+      title: <FormattedMessage id="Manage Verification" />,
       type: 'item',
       icon: icons.validation,
       url: '/apps/VOI'

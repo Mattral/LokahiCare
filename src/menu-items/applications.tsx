@@ -29,13 +29,6 @@ const applications: NavItemType = {
   children: [
 
     {
-      id: 'Generate Legal Document',
-      title: <FormattedMessage id="WhiteBoard Chat" />,
-      type: 'item',
-      url: '/forms/Whiteboard',
-      icon: icons.statistics
-    },
-    {
       id: 'Diabetes Risk Prediction',
       title: <FormattedMessage id="Predict Diabetes Risk" />,
       type: 'item',
@@ -62,6 +55,13 @@ const applications: NavItemType = {
           url: '/session'
         }
       ]
+    },
+    {
+      id: 'FlowChart',
+      title: <FormattedMessage id="Draw Flow Chart" />,
+      type: 'item',
+      url: '/forms/Whiteboard',
+      icon: icons.statistics
     }
 
   ]
