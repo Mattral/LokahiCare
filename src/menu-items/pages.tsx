@@ -73,7 +73,17 @@ const pages: NavItemType = {
           url: '/apps/Transfer'
         },
         {
-          id: 'Detection model3',
+          id: 'Detection model2',
+          title: (
+            <>
+              <FormattedMessage id="AI Therapist" /> 
+            </>
+          ),
+          type: 'item',
+          url: '/apps/chatbot'
+        },
+        {
+          id: 'Beta',
           title: (
             <>
               <FormattedMessage id="Visual Aid (beta)" /> 

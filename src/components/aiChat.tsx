@@ -141,11 +141,37 @@ const AiChatbot = () => {
         if (Array.isArray(newHistory) && typeof response === 'string') {
             setHistory(newHistory);
             setBotResponse(response);
+            // Convert the bot response to speech
+            speakText(response);
         }
 
         setUserInput('');
         setLoading(false);
     };
+
+    const speakText = (text: string) => {
+        const speech = new SpeechSynthesisUtterance(text);
+    
+        // Set the language to English (you can adjust this if you want a different language)
+        speech.lang = 'en-US';
+    
+        // Get all available voices
+        const voices = window.speechSynthesis.getVoices();
+    
+        // Find the first female voice available
+        const femaleVoice = voices.find(voice => voice.name.toLowerCase().includes('female')) || voices[0];
+    
+        // Set the selected voice
+        speech.voice = femaleVoice;
+    
+        // Adjust pitch and rate (optional, you can modify these values)
+        speech.pitch = 1;  // 0 to 2 range, 1 is the default
+        speech.rate = 1;   // 0.1 to 10 range, 1 is the default
+    
+        // Speak the text
+        window.speechSynthesis.speak(speech);
+    };
+    
 
       // Update windowWidth state on resize
     useEffect(() => {

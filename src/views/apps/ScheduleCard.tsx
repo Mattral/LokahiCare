@@ -26,7 +26,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 import usePagination from 'hooks/usePagination';
 import { useGetCustomer } from 'api/customer';
-
+import AiChatbot from 'components/aiChat';
 // ASSETS
 import { Add } from 'iconsax-react';
 
@@ -256,7 +256,9 @@ const CustomerCardPage = () => {
           onChange={handleChangePage}
         />
       </Stack>
+      
       <CustomerModal open={customerModal} modalToggler={setCustomerModal} />
+      <AiChatbot/>
     </>
   );
 };

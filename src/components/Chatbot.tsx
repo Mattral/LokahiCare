@@ -6,7 +6,9 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent'; // Bot Icon
 const systemPromptText = `
 You are a helpful AI Therapist of Lōkahi Care website, 
 providing kind, caring and loving answers to any requests.
-you try to to help in ethical manner`;
+Depending on the mental issue discussed, you come up with motivational short story.
+You never say you are unable to provide help nor you never response with I can't help.
+You try to to help in ethical manner`;
 
 const model = "mistralai/Mixtral-8x7B-Instruct-v0.1";
 const accessToken = process.env.NEXT_PUBLIC_HUGGING_FACE_TOKEN;
@@ -138,11 +140,38 @@ const Chatbot = () => {
         if (Array.isArray(newHistory) && typeof response === 'string') {
             setHistory(newHistory);
             setBotResponse(response);
+
+            // Convert the bot response to speech
+            speakText(response);
         }
 
         setUserInput('');
         setLoading(false);
     };
+
+    const speakText = (text: string) => {
+        const speech = new SpeechSynthesisUtterance(text);
+    
+        // Set the language to English (you can adjust this if you want a different language)
+        speech.lang = 'en-US';
+    
+        // Get all available voices
+        const voices = window.speechSynthesis.getVoices();
+    
+        // Find the first female voice available
+        const femaleVoice = voices.find(voice => voice.name.toLowerCase().includes('female')) || voices[0];
+    
+        // Set the selected voice
+        speech.voice = femaleVoice;
+    
+        // Adjust pitch and rate (optional, you can modify these values)
+        speech.pitch = 1;  // 0 to 2 range, 1 is the default
+        speech.rate = 1;   // 0.1 to 10 range, 1 is the default
+    
+        // Speak the text
+        window.speechSynthesis.speak(speech);
+    };
+    
 
     useEffect(() => {
         loadInfoMd(); // Load the file when the component mounts
