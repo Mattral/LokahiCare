@@ -3,6 +3,8 @@ import { useState, useEffect  } from 'react';
 import axios from 'axios';
 import { Person } from '@mui/icons-material'; // User Icon
 import SupportAgentIcon from '@mui/icons-material/SupportAgent'; // Bot Icon
+import MicIcon from '@mui/icons-material/Mic'; // Microphone Icon
+import MicOffIcon from '@mui/icons-material/MicOff'; // Microphone Off Icon
 
 const systemPromptText = `
 You are a helpful AI Therapist of Lōkahi Care website, 
@@ -115,6 +117,7 @@ const Chatbot = () => {
     const [userInput, setUserInput] = useState<string>('');
     const [botResponse, setBotResponse] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
+    const [isListening, setIsListening] = useState<boolean>(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -171,6 +174,43 @@ const Chatbot = () => {
     
         // Speak the text
         window.speechSynthesis.speak(speech);
+    };
+
+
+    // Microphone functionality
+    const startListening = () => {
+        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+            recognition.continuous = false;
+            recognition.interimResults = false;
+
+            recognition.onstart = () => {
+                setIsListening(true);
+            };
+
+            recognition.onresult = (event: any) => {
+                const transcript = event.results[0][0].transcript;
+                setUserInput(transcript);
+                setIsListening(false);
+            };
+
+            recognition.onerror = () => {
+                setIsListening(false);
+            };
+
+            recognition.onend = () => {
+                setIsListening(false);
+            };
+
+            recognition.start();
+        } else {
+            alert("Speech Recognition is not supported in your browser.");
+        }
+    };
+
+    const stopListening = () => {
+        setIsListening(false);
     };
     
 
@@ -296,23 +336,48 @@ const Chatbot = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '15px',
+
             }}>
-                <input
-                    type="text"
-                    value={userInput}
-                    onChange={(e) => setUserInput(e.target.value)}
-                    placeholder="Type your message here"
-                    style={{
-                        padding: '15px 20px',
-                        fontSize: '16px',
-                        borderRadius: '25px',
-                        border: '1px solid #ccc',
-                        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.05)',
-                        backgroundColor: '#fff',
-                        transition: 'all 0.3s ease',
-                        width: '100%',
-                    }}
-                />
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                }}>
+                    <input
+                        type="text"
+                        value={userInput}
+                        onChange={(e) => setUserInput(e.target.value)}
+                        placeholder="Type your message here"
+                        style={{
+                            padding: '15px 20px',
+                            fontSize: '16px',
+                            borderRadius: '25px',
+                            border: '1px solid #ccc',
+                            boxShadow: '0 4px 10px rgba(0, 0, 0, 0.05)',
+                            backgroundColor: '#fff',
+                            transition: 'all 0.3s ease',
+                            width: '90%',
+                            paddingRight: '60px', // To avoid overlap with the mic button
+
+                        }}
+                    />
+                    <button
+                        type="button"
+                        onClick={isListening ? stopListening : startListening}
+                        style={{
+                            backgroundColor: '#007BFF',
+                            color: '#fff',
+                            border: 'none',
+                            borderRadius: '50%',
+                            padding: '12px',
+                            cursor: 'pointer',
+                            position: 'absolute', // Make mic button float to the right
+                            right: '20px', // Align the mic button to the right
+                        }}
+                    >
+                        {isListening ? <MicOffIcon style={{ fontSize: '24px' }} /> : <MicIcon style={{ fontSize: '24px' }} />}
+                    </button>
+                </div>
                 <button
                     type="submit"
                     disabled={loading}
