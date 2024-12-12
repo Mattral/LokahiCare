@@ -1,0 +1,3 @@
+# Usage Alert
+
+If it works dont touch it alert. You will come to this path only where there is an very critical errors arise regarding hooks or create new ones. The files are referenced from publicly availible able pro template. Please do not bother checking here unless necessary as this may just waste your time. Every thing here makes sense to you only when you are reading codes from related parts. Reading this path in first try is not a good idea.
