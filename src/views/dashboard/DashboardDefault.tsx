@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import Hero from 'sections/landing/Header';
 import Technologies from 'sections/landing/Technologies';
 import Apps from 'sections/landing/Apps';
-
+import ComboPage from 'sections/landing/Combo';
 import SimpleLayout from 'layout/SimpleLayout';
 import Pricing1Page from 'views/price/Pricing1';
 import About from 'sections/landing/About';
@@ -27,6 +27,7 @@ const Landing = () => {
       <div ref={servicesRef}>
         <Technologies />
       </div>
+      <ComboPage/>
       <div ref={pricingRef}>
         <Pricing1Page />
       </div>

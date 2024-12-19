@@ -4,6 +4,8 @@ import Hero from 'sections/landing/Header';
 import Technologies from 'sections/landing/Technologies';
 import Apps from 'sections/landing/Apps';
 import Testimonial from 'sections/landing/Testimonial';
+import ComboPage from 'sections/landing/Combo';
+
 // import ContactUs from 'sections/landing/ContactUs';<ContactUs />
 import SimpleLayout from 'layout/SimpleLayout';
 import Pricing1Page from 'views/price/Pricing1';
@@ -24,6 +26,7 @@ const Landing = () => {
       <div ref={servicesRef}>
         <Technologies />
       </div>
+      <ComboPage/>
       <div ref={pricingRef}>
         <Pricing1Page />
       </div>
